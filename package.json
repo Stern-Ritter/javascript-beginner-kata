@@ -1,0 +1,23 @@
+{
+  "name": "javascript-beginner",
+  "version": "1.0.0",
+  "description": "JavaScript Beginner course tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stern-Ritter/JavaScript-Beginner.git"
+  },
+  "author": "Konstantin Fadeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stern-Ritter/JavaScript-Beginner/issues"
+  },
+  "homepage": "https://github.com/Stern-Ritter/JavaScript-Beginner#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1"
+  }
+}
