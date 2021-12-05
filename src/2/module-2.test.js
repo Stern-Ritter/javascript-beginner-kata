@@ -50,7 +50,7 @@ describe("Homework #2", () => {
         "Декабрь",
       ];
       months.forEach((element, index) => {
-        jest.spyOn(window, "prompt").mockReturnValue(index + 1);
+        jest.spyOn(window, "prompt").mockReturnValue(String(index + 1));
         showMonthForNumber();
         expect(console.log).toHaveBeenCalledWith(element);
       });
@@ -59,7 +59,7 @@ describe("Homework #2", () => {
     it("Function return 'Invalid month number' for invalid inputs", () => {
       const invalidValues = [-1, "Faa", "Array", ""];
       invalidValues.forEach((element) => {
-        jest.spyOn(window, "prompt").mockReturnValue(element);
+        jest.spyOn(window, "prompt").mockReturnValue(String(element));
         showMonthForNumber();
         expect(console.log).toHaveBeenCalledWith("Некорректный номер месяца.");
       });

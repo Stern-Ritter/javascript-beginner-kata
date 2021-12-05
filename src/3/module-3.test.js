@@ -45,7 +45,7 @@ describe("Homework #3", () => {
 
   describe("Sum of odd numbers in the range from 1 to n", () => {
     it("Function return correct value for 0", () => {
-      jest.spyOn(window, "prompt").mockReturnValue(0);
+      jest.spyOn(window, "prompt").mockReturnValue("0");
       calcAverageOfOddNumbersInRange();
       expect(console.log).toHaveBeenLastCalledWith(
         "Сумма нечетных чисел от 1 до 0: 0."
@@ -53,7 +53,7 @@ describe("Homework #3", () => {
     });
 
     it("Function return correct value for 1", () => {
-      jest.spyOn(window, "prompt").mockReturnValue(1);
+      jest.spyOn(window, "prompt").mockReturnValue("1");
       calcAverageOfOddNumbersInRange();
       expect(console.log).toHaveBeenLastCalledWith(
         "Сумма нечетных чисел от 1 до 1: 1."
@@ -61,7 +61,7 @@ describe("Homework #3", () => {
     });
 
     it("Function return correct value for number greater than 1", () => {
-      jest.spyOn(window, "prompt").mockReturnValue(11);
+      jest.spyOn(window, "prompt").mockReturnValue("11");
       calcAverageOfOddNumbersInRange();
       expect(console.log).toHaveBeenLastCalledWith(
         "Сумма нечетных чисел от 1 до 11: 36."

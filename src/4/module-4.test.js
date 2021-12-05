@@ -9,7 +9,7 @@ describe("Homework #4", () => {
 
   describe("Set user age", () => {
     it("Function correct edit user", () => {
-      jest.spyOn(window, "prompt").mockReturnValue(19);
+      jest.spyOn(window, "prompt").mockReturnValue("19");
       setUserAge(mockUser);
       expect(mockUser.age).toBe(19);
     });

@@ -1,7 +1,7 @@
 export function setUserAge(user) {
   const editUser = user;
   const answer = prompt("Введите возраст: ");
-  editUser.age = answer;
+  editUser.age = parseInt(answer, 10);
 }
 
 export function copyAndEditUser(user) {

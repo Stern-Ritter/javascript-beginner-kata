@@ -4,7 +4,7 @@ export function findMaxOfNumbers(first, second) {
 
 export function showMonthForNumber() {
   const answer = prompt("Введите номер месяца:");
-  switch (answer) {
+  switch (parseInt(answer, 10)) {
     case 1:
       console.log("Январь");
       break;

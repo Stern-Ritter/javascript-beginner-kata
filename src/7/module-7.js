@@ -1,6 +1,3 @@
-// const page = document.querySelector(".page");
-// createNotepad(page);
-
 function addNote(noteList, noteText) {
   const item = document.createElement("li");
   const paragraph = document.createElement("p");

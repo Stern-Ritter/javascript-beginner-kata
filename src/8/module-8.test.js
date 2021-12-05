@@ -24,7 +24,7 @@ describe("Homework #8", () => {
         ["08.08.2021", "Воскресенье"],
       ];
       testDates.forEach((date) => {
-        jest.spyOn(window, "prompt").mockReturnValue(date[0]);
+        jest.spyOn(window, "prompt").mockReturnValue(String(date[0]));
         showDayOfWeek();
         expect(console.log).toBeCalledWith(date[1]);
       });
@@ -39,7 +39,7 @@ describe("Homework #8", () => {
         "-1",
       ];
       invalidDates.forEach((date) => {
-        jest.spyOn(window, "prompt").mockReturnValue(date);
+        jest.spyOn(window, "prompt").mockReturnValue(String(date));
         showDayOfWeek();
         expect(console.log).toBeCalledWith("Некорректное значение");
       });
